@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Задачник</h1>
+        <button id="open-auth" type="button">Авторизация</button>
+        <section id="user-panel" hidden>
+            <span id="username-label"></span>
+            <button id="logout" type="button">Выйти</button>
+        </section>
+    </header>
+    <ul id="task-list"></ul>
+    <section id="task-controls">
+        <input id="task-title" type="text" placeholder="Название задачи">
+        <input id="task-description" type="text" placeholder="Описание задачи">
+        <button id="add-task" type="button">Добавить задачу</button>
+    </section>
+    <p id="form-error" role="alert"></p>
+    <script src="script.js" defer></script>
+</body>
+</html>
